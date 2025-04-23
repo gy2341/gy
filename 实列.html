@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>左侧图片右侧文本布局</title>
+    <style>
+        /* 整体粉色背景 */
+        body {
+            background-color: #ffd6e7; /* 浅粉色背景 */
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* 内容容器 */
+        .container {
+            display: flex; /* 使用Flexbox布局 */
+            background-color: #ffb6c1; /* 稍深的粉色 */
+            border-radius: 15px; /* 圆角边框 */
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+            max-width: 900px;
+            margin: 114px auto; /* 居中显示 */
+        }
+        
+        /* 图片区域样式 */
+        .image-section {
+            flex: 1; /* 占据1份空间 */
+            padding: 10px;
+        }
+        
+        .image-section img {
+            width: 100%; /* 图片宽度填满容器 */
+            height: 344px;
+            margin: auto;
+            margin-top: 80px;
+            border-radius: 10px; /* 图片圆角 */
+            object-fit: cover; /* 保持图片比例 */
+        }
+        
+        /* 文本区域样式 */
+        .text-section {
+            flex: 1; /* 占据1份空间 */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .text-section h2 {
+            color: #d23369; /* 标题颜色 */
+            margin-top: 0;
+        }
+        
+        .text-section p {
+            color: #555; /* 正文颜色 */
+            line-height: 1.6;
+        }
+        
+        /* 响应式设计 - 小屏幕时改为上下布局 */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .image-section, .text-section {
+                flex: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <!-- 替换为你的图片路径 -->
+            <img src="3.jpg" alt="示例图片">
+        </div>
+        <div class="text-section">
+            <h2>徐州之行</h2>
+            <p>九月的天高气爽,我们一起去了徐州。中秋的徐州充满着诗情画意，虽然前一天我们到徐州以及很疲惫了，但是我们还是在徐州开启了我们的故事。</p>
+            <p>第二天上午，我们去了户部山，清晨的户部山，青石板还沁着夜露的凉意，晨光斜斜掠过明清屋檐的兽脊。老街刚醒，炸油条的香气混着茶馆第一壶茉莉的蒸汽，在巷弄里蜿蜒。梧桐叶筛落的碎金中，几个老人提着鸟笼踱过状元碑坊，笼中画眉的啼叫惊醒了古玩店门楣上沉睡的铜铃。</p>
+            <p>晚上又去了一趟户部山，中秋晚上的户部山，别有一番风味。此时月光映照在你的身上，今晚的你格外美丽，像仙女一样如雾中花、水中月可望而不可即😍😍。</p>
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>
